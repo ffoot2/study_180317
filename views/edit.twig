@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ constant('\\App\\Sample\\Common::ADMIN_BLOG_TITLE') }}</title>
+</head>
+<body>
+  <h1>{{ constant('\\App\\Sample\\Common::ADMIN_BLOG_TITLE') }}</h1>
+  <hr>
+  <form action="" method="post">
+    <label>TITLE:</label><br>
+    <input type="text" name="title" value="{{ article.title }}"><br>
+    <label>BODY:</label><br>
+    <textarea name="body" rows="10" cols="30">{{ article.body }}</textarea><br>
+    <input type="submit" name="name" value="post">
+  </form>
+  <hr>
+  <a href="/admin/">BACK</a>
+</body>
+</html>
